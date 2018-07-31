@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+
+<body>
+
+<form action="/action_page.php">
+  Username: <input type="text" id="UB" name="UsernameBox"><br>
+  Password:  		<input type="text" id="PB" name="PasswordBox"><br>
+  Confirm Password: <input type="text" id="CPB" name="PasswordConfirmationBox"><br>
+  
+  <button type="button" id="sumButton" onclick="doesPasswordMatch()" >Check Account</button>
+
+  <script>
+
+  function doesPasswordMatch(PB, CPB){
+var UBVariable = document.getElementById("UB").value;
+var PBVariable = document.getElementById("PB").value;
+var CPBVariable = document.getElementById("CPB").value;
+if (UBVariable.length < 1){
+  alert('Please fill all boxes!')
+      return false;
+}else if(PBVariable != CPBVariable){
+        alert('Password does not match');
+        return false;
+    }else if(PBVariable.length < 8){
+alert('Password isnt long enough');
+return false;
+}else if(PBVariable)  
+
+
+}
+
+
+
+
+  </script>
+
+</form>
+</body>
+</html>

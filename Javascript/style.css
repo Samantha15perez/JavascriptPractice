@@ -1,0 +1,23 @@
+.blueTime{
+    width: 50%;
+    height: 300px;
+    background-color: blue;
+}
+
+.greenTime{
+    width: 50%;
+    height: 300px;
+    background-color: green;
+}
+
+.yellowTime{
+    width: 50%;
+    height: 300px;
+    background-color: yellow;
+}
+
+.redTime{
+    width: 50%;
+    height: 300px;
+    background-color: red;
+}

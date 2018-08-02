@@ -28,16 +28,37 @@ var CPBVariable = document.getElementById("CPB").value;
 if (UBVariable.length < 1){
   alert('Please fill all boxes!')
       return false;
-}else if(PBVariable != CPBVariable){
+}
+if(PBVariable != CPBVariable){
         alert('Password does not match');
         return false;
-    }else if(PBVariable.length < 8){
+    }
+if(PBVariable.length < 8){
 alert('Password isnt long enough');
 return false;
-}else if(PBVariable)  
-
-
 }
+var DoesPasswordHaveNumber = false;
+for (i=0; i< PBVariable.length; i++){
+
+  var isThisNumber = parseInt(PBVariable.charAt(i));
+  if(Number.isInteger(isThisNumber.value) == true){
+    DoesPasswordHaveNumber = true;}
+  
+  }
+
+   if (DoesPasswordHaveNumber == false){
+    alert('ya gotta put a number, dingus')
+  }
+
+  }
+  
+
+
+
+  //create for loop
+  //test every character place from 0 to [length]
+  //test if any of them contain a number
+
 
 
 
